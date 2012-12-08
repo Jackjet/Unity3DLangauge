@@ -1,31 +1,25 @@
-﻿//
-//修改时间:2012-12-08
-//翻译作者:SmartBooks
-//联系方式:SmartBooks@qq.com
-//
-
 // 
-// 树编辑
+// Tree Editor
 //
 
 //
 // Hierachy view
 //
-TreeEditor.Hierachy.Foldout:							层次结构 |
+TreeEditor.Hierachy.Foldout:							Hierarchy |
 
-TreeEditor.Hierachy.TreeGroupRoot:						| 树的根节点
-TreeEditor.Hierachy.TreeGroupBranch:					| 分支组
-TreeEditor.Hierachy.TreeGroupLeaf:						| 叶子组
+TreeEditor.Hierachy.TreeGroupRoot:						| Tree Root Node
+TreeEditor.Hierachy.TreeGroupBranch:					| Branch Group
+TreeEditor.Hierachy.TreeGroupLeaf:						| Leaf Group
 
-TreeEditor.Hierachy.ShowHide:							| 显示 / 隐藏组
+TreeEditor.Hierachy.ShowHide:							| Show / Hide Group
 TreeEditor.Hierachy.NodeCount:							| Node Count
 
-TreeEditor.Hierachy.Stats:								Verts: [v] / Tris: [t] / 材质: [m] |
+TreeEditor.Hierachy.Stats:								Verts: [v] / Tris: [t] / Materials: [m] |
 
 //
-// 编辑工具
+// Editing Tools
 //
-TreeEditor.EditingTools.Foldout:						编辑工具组 |
+TreeEditor.EditingTools.Foldout:						Editing Tools |
 TreeEditor.BranchTranslate:								Move Branch | Select a branch spline point and drag to move it.
 TreeEditor.BranchRotate:								Rotate Branch | Select a branch spline point and drag to rotate it.
 TreeEditor.BranchFreeHand:								Free Hand | Click on a branch spline node and drag to draw a new shape.
@@ -39,14 +33,14 @@ TreeEditor.EditingTools.WarningLabel:					This group has been edited by hand. So
 TreeEditor.EditingTools.WarningButton:					Convert to procedural group. All hand editing will be lost! |
 
 //
-// 创建风域按钮
+// Create wind zone button
 //
-TreeEditor.WindZone.Create:								创建风域 | Creates a default wind zone, which is required for animating trees while playing the game.
+TreeEditor.WindZone.Create:								Create Wind Zone | Creates a default wind zone, which is required for animating trees while playing the game.
 
 //
 // Root / Tree
 //
-TreeEditor.TreeGroupRoot.Foldout:						树属性 | A group of global tree properties. Add parts to the tree in the Hierarchy view above.
+TreeEditor.TreeGroupRoot.Foldout:						Tree Properties | A group of global tree properties. Add parts to the tree in the Hierarchy view above.
 
 TreeEditor.TreeGroupRoot.Distribution:					Distribution |
 TreeEditor.TreeGroupRoot.GroupSeed:						Tree Seed | The global seed that affects the entire tree. Use it to randomize your tree, while keeping the general structure of it.
@@ -104,8 +98,8 @@ TreeEditor.TreeGroupBranch.FrondMaterial:				Frond Material | Material for the f
 TreeEditor.TreeGroup.NotATreeShader:					This material does not use a tree shader. A tree shader has to contain the word 'leaves' or 'bark' in the name and the line: Dependency "OptimizedShader" = "OPTIMIZED_SHADER_NAME" in the code. |
 TreeEditor.TreeGroup.TooManyBarkShaders:				This tree uses multiple bark shaders but only one bark shader can be used on a tree. Select which bark shader to apply to all the bark materials used by this tree. |
 TreeEditor.TreeGroup.TooManyLeafShaders:				This tree uses multiple leaf shaders but only one leaf shader can be used on a tree. Select which leaf shader to apply to all the leaf materials used by this tree. |
-TreeEditor.TreeGroup.ChangeShaderButton:				应用 | Will change the shader in the material to the one selected.
-TreeEditor.TreeGroup.ChangeAllShadersOnNodesButton:		应用 | Will change the shader in all the materials on that node type to the one selected.
+TreeEditor.TreeGroup.ChangeShaderButton:				Apply | Will change the shader in the material to the one selected.
+TreeEditor.TreeGroup.ChangeAllShadersOnNodesButton:		Apply | Will change the shader in all the materials on that node type to the one selected.
 
 TreeEditor.TreeGroupBranch.GeometryModeOption.BranchOnly:		Branch Only |
 TreeEditor.TreeGroupBranch.GeometryModeOption.BranchAndFronds:	Branch + Fronds |
@@ -116,7 +110,7 @@ TreeEditor.TreeGroupBranch.GeometryModeOption.FrondsOnly:		Fronds Only |
 //
 TreeEditor.TreeGroupBranch.Shape:					Shape | Adjusts the shape and growth of the branches. Use the curves to fine tune the shape, all curves are relative to the branch itself.
 
-TreeEditor.TreeGroupBranch.Length:					长度 | Adjusts the length of the branches.
+TreeEditor.TreeGroupBranch.Length:					Length | Adjusts the length of the branches.
 TreeEditor.TreeGroupBranch.Radius:					Radius | Adjusts the radius of the branches, use the curve to fine-tune the radius along the length of the branches.
 TreeEditor.TreeGroupBranch.IsLengthRelative:		Relative Length | Determines whether the radius of a branch is affected by its length.
 TreeEditor.TreeGroupBranch.CapSmoothing:			Cap Smoothing | Defines the roundness of the cap/tip of the branches. Useful for cacti.
@@ -188,8 +182,8 @@ TreeEditor.TreeGroupLeaf.Size:						Size | Adjusts the size of the leaves, use t
 TreeEditor.TreeGroupLeaf.PerpendicularAlign:		Perpendicular Align | Adjusts whether the leaves are aligned perpendicular to the parent branch.
 TreeEditor.TreeGroupLeaf.HorizontalAlign:			Horizontal Align | Adjusts whether the leaves are aligned horizontally.
 
-TreeEditor.TreeGroupLeaf.Animation:					风 | Adjusts the parameters used for animating this group of leaves. Wind zones are only active in Play Mode. If you select too high values for Main Wind and Main Turbulence the leaves may float away from the branches.
-TreeEditor.TreeGroupLeaf.MainWind:					主风 | Primary wind effect. Usually this should be kept as a low value to avoid leaves floating away from the parent branch.
+TreeEditor.TreeGroupLeaf.Animation:					Wind | Adjusts the parameters used for animating this group of leaves. Wind zones are only active in Play Mode. If you select too high values for Main Wind and Main Turbulence the leaves may float away from the branches.
+TreeEditor.TreeGroupLeaf.MainWind:					Main Wind | Primary wind effect. Usually this should be kept as a low value to avoid leaves floating away from the parent branch.
 TreeEditor.TreeGroupLeaf.MainTurbulence:			Main Turbulence | Secondary turbulence effect. For leaves this should usually be kept as a low value.
 TreeEditor.TreeGroupLeaf.EdgeTurbulence:			Edge Turbulence | Defines how much wind turbulence occurs along the edges of the leaves.
 
@@ -201,7 +195,7 @@ TreeEditor.TreeGroupLeaf.GeometryModeOption.Mesh:		Mesh |
 
 // Shared options
 
-TreeEditor.DistributionModeOption.Random:			随机 |
+TreeEditor.DistributionModeOption.Random:			Random |
 TreeEditor.DistributionModeOption.Alternate:		Alternate |
 TreeEditor.DistributionModeOption.Opposite:			Opposite |
 TreeEditor.DistributionModeOption.Whorled:			Whorled |
