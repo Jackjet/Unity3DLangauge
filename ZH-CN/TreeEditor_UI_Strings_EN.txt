@@ -1,0 +1,207 @@
+﻿//
+//修改时间:2012-12-08
+//翻译作者:SmartBooks
+//联系方式:SmartBooks@qq.com
+//
+
+// 
+// Tree Editor
+//
+
+//
+// Hierachy view
+//
+TreeEditor.Hierachy.Foldout:							层次结构 |
+
+TreeEditor.Hierachy.TreeGroupRoot:						| 树的根节点
+TreeEditor.Hierachy.TreeGroupBranch:					| 分支组
+TreeEditor.Hierachy.TreeGroupLeaf:						| 叶子组
+
+TreeEditor.Hierachy.ShowHide:							| Show / Hide Group
+TreeEditor.Hierachy.NodeCount:							| Node Count
+
+TreeEditor.Hierachy.Stats:								Verts: [v] / Tris: [t] / Materials: [m] |
+
+//
+// Editing Tools
+//
+TreeEditor.EditingTools.Foldout:						Editing Tools |
+TreeEditor.BranchTranslate:								Move Branch | Select a branch spline point and drag to move it.
+TreeEditor.BranchRotate:								Rotate Branch | Select a branch spline point and drag to rotate it.
+TreeEditor.BranchFreeHand:								Free Hand | Click on a branch spline node and drag to draw a new shape.
+TreeEditor.LeafTranslate:								Move Leaf | Select a leaf spline point and drag to move it.
+TreeEditor.LeafRotate:									Rotate Leaf | Select a leaf spline point and drag to rotate it.
+
+//
+// Hand Edited Warning
+// 
+TreeEditor.EditingTools.WarningLabel:					This group has been edited by hand. Some parameters may not be available. | 
+TreeEditor.EditingTools.WarningButton:					Convert to procedural group. All hand editing will be lost! |
+
+//
+// Create wind zone button
+//
+TreeEditor.WindZone.Create:								Create Wind Zone | Creates a default wind zone, which is required for animating trees while playing the game.
+
+//
+// Root / Tree
+//
+TreeEditor.TreeGroupRoot.Foldout:						Tree Properties | A group of global tree properties. Add parts to the tree in the Hierarchy view above.
+
+TreeEditor.TreeGroupRoot.Distribution:					Distribution |
+TreeEditor.TreeGroupRoot.GroupSeed:						Tree Seed | The global seed that affects the entire tree. Use it to randomize your tree, while keeping the general structure of it.
+TreeEditor.TreeGroupRoot.AreaSpread:					Area Spread | Adjusts the spread of trunk nodes. Has an effect only if you have more than one trunk.
+TreeEditor.TreeGroupRoot.GroundOffset:					Ground Offset | Adjusts the offset of trunk nodes on Y axis.
+
+TreeEditor.TreeGroupRoot.Geometry:						Geometry |
+TreeEditor.TreeGroupRoot.AmbientOcclusion:				Ambient Occlusion | Toggles ambient occlusion on or off.
+TreeEditor.TreeGroupRoot.AODensity:						AO Density | Adjusts the density of ambient occlusion.
+TreeEditor.TreeGroupRoot.LODQuality:					LOD Quality | Defines the level-of-detail for the entire tree. A low value will make the tree less complex, a high value will make the tree more complex. Check the statistics in the hierarchy view to see the current complexity of the mesh.
+
+TreeEditor.TreeGroupRoot.MaterialProperties:			Material | Controls global material properties of the tree.
+TreeEditor.TreeGroupRoot.TranslucencyColor:				Translucency Color | The color that will be multiplied in when the leaves are backlit.
+TreeEditor.TreeGroupRoot.TranslucencyViewDependency:	Trans. View Dep. | Translucency view dependency. Fully view dependent translucency is relative to the angle between the view direction and the light direction. View independent is relative to the angle between the leaf's normal vector and the light direction.
+TreeEditor.TreeGroupRoot.AlphaCutoff:					Alpha Cutoff | Alpha values from the base texture smaller than the alpha cutoff are clipped creating a cutout.
+TreeEditor.TreeGroupRoot.ShadowStrength:				Shadow Strength | Makes the shadows on the leaves less harsh. Since it scales all the shadowing that the leaves receive, it should be used with care for trees that are e.g. in a shadow of a mountain.
+TreeEditor.TreeGroupRoot.ShadowOffsetScale:				Shadow Offset | Scales the values from the Shadow Offset texture set in the source material. It is used to offset the position of the leaves when collecting the shadows, so that the leaves appear as if they were not placed on one quad. It's especially important for billboarded leaves and they should have brighter values in the center of the texture and darker ones at the border. Start out with a black texture and add different shades of gray per leaf.
+
+TreeEditor.TreeGroupRoot.ShadowTextureQuality:			Shadow Caster Res. | Defines the resolution of the texture atlas containing alpha values from source diffuse textures. The atlas is used when the leaves are rendered as shadow casters. Using lower resolution might increase performance.
+TreeEditor.TreeGroupRoot.ShadowTextureQualityOption.Full:	Full Res |
+TreeEditor.TreeGroupRoot.ShadowTextureQualityOption.Half:	Half Res |
+TreeEditor.TreeGroupRoot.ShadowTextureQualityOption.Quarter:	Quarter Res |
+TreeEditor.TreeGroupRoot.ShadowTextureQualityOption.OneEighth:	One-8th Res |
+TreeEditor.TreeGroupRoot.ShadowTextureQualityOption.OneSixteenth:	One-16th Res |
+
+// 
+// Branches
+//
+TreeEditor.TreeGroupBranch.Foldout:						Branch Group Properties | 
+
+// 
+// Distribution
+//
+TreeEditor.TreeGroupBranch.Distribution:				Distribution | Adjusts the count and placement of branches in the group. Use the curves to fine tune position, rotation and scale. The curves are relative to the parent branch or to the area spread in case of a trunk.
+
+TreeEditor.TreeGroupBranch.GroupSeed:					Group Seed | The seed for this group of branches. Modify to vary procedural generation.
+TreeEditor.TreeGroupBranch.Frequency:					Frequency | Adjusts the number of branches created for each parent branch.
+TreeEditor.TreeGroupBranch.DistributionMode:			Distribution | The way the branches are distributed along their parent.
+TreeEditor.TreeGroupBranch.Twirl:						Twirl | Twirl around the parent branch.
+TreeEditor.TreeGroupBranch.WhorledStep:					Whorled Step | Defines how many nodes are in each whorled step when using Whorled distribution. For real plants this is normally a Fibonacci number.
+TreeEditor.TreeGroupBranch.GrowthScale:					Growth Scale | Defines the scale of nodes along the parent node. Use the curve to adjust and the slider to fade the effect in and out.
+TreeEditor.TreeGroupBranch.GrowthAngle:					Growth Angle | Defines the initial angle of growth relative to the parent. Use the curve to adjust and the slider to fade the effect in and out.
+
+//
+// Geometry
+//
+TreeEditor.TreeGroupBranch.Geometry:					Geometry | Select what type of geometry is generated for this branch group and which materials are applied. LOD Multiplier allows you to adjust the quality of this group relative to tree's LOD Quality.
+ 
+TreeEditor.TreeGroupBranch.LODQuality:					LOD Multiplier | Adjusts the quality of this group relative to tree's LOD Quality, so that it is of either higher or lower quality than the rest of the tree.
+TreeEditor.TreeGroupBranch.GeometryMode:				Geometry Mode | Type of geometry for this branch group.
+TreeEditor.TreeGroupBranch.BranchMaterial:				Branch Material | The primary material for the branches.
+TreeEditor.TreeGroupBranch.BreakMaterial:				Break Material | Material for capping broken branches.
+TreeEditor.TreeGroupBranch.FrondMaterial:				Frond Material | Material for the fronds.
+
+TreeEditor.TreeGroup.NotATreeShader:					This material does not use a tree shader. A tree shader has to contain the word 'leaves' or 'bark' in the name and the line: Dependency "OptimizedShader" = "OPTIMIZED_SHADER_NAME" in the code. |
+TreeEditor.TreeGroup.TooManyBarkShaders:				This tree uses multiple bark shaders but only one bark shader can be used on a tree. Select which bark shader to apply to all the bark materials used by this tree. |
+TreeEditor.TreeGroup.TooManyLeafShaders:				This tree uses multiple leaf shaders but only one leaf shader can be used on a tree. Select which leaf shader to apply to all the leaf materials used by this tree. |
+TreeEditor.TreeGroup.ChangeShaderButton:				应用 | Will change the shader in the material to the one selected.
+TreeEditor.TreeGroup.ChangeAllShadersOnNodesButton:		应用 | Will change the shader in all the materials on that node type to the one selected.
+
+TreeEditor.TreeGroupBranch.GeometryModeOption.BranchOnly:		Branch Only |
+TreeEditor.TreeGroupBranch.GeometryModeOption.BranchAndFronds:	Branch + Fronds |
+TreeEditor.TreeGroupBranch.GeometryModeOption.FrondsOnly:		Fronds Only |
+
+//                                              
+// Shape
+//
+TreeEditor.TreeGroupBranch.Shape:					Shape | Adjusts the shape and growth of the branches. Use the curves to fine tune the shape, all curves are relative to the branch itself.
+
+TreeEditor.TreeGroupBranch.Length:					长度 | Adjusts the length of the branches.
+TreeEditor.TreeGroupBranch.Radius:					Radius | Adjusts the radius of the branches, use the curve to fine-tune the radius along the length of the branches.
+TreeEditor.TreeGroupBranch.IsLengthRelative:		Relative Length | Determines whether the radius of a branch is affected by its length.
+TreeEditor.TreeGroupBranch.CapSmoothing:			Cap Smoothing | Defines the roundness of the cap/tip of the branches. Useful for cacti.
+
+TreeEditor.TreeGroupBranch.Crinklyness:				Crinkliness | Adjusts how crinkly/crooked the branches are, use the curve to fine-tune.
+TreeEditor.TreeGroupBranch.SeekSunGround:			Seek Sun | Use the curve to adjust how the branches are bent upwards/downwards and the slider to change the scale.
+
+TreeEditor.TreeGroupBranch.Noise:					Noise | Overall noise factor, use the curve to fine-tune.
+TreeEditor.TreeGroupBranch.NoiseScaleU:				Noise Scale U | Scale of the noise around the branch, lower values will give a more wobbly look, while higher values gives a more stochastic look.
+TreeEditor.TreeGroupBranch.NoiseScaleV:				Noise Scale V | Scale of the noise along the branch, lower values will give a more wobbly look, while higher values gives a more stochastic look.
+
+TreeEditor.TreeGroupBranch.FlareRadius:				Flare Radius | The radius of the flares, this is added to the main radius, so a zero value means no flares.
+TreeEditor.TreeGroupBranch.FlareHeight:				Flare Height | Defines how far up the trunk the flares start.
+TreeEditor.TreeGroupBranch.FlareNoise:				Flare Noise | Defines the noise of the flares, lower values will give a more wobbly look, while higher values gives a more stochastic look.
+
+TreeEditor.TreeGroupBranch.WeldHeight:				Weld Length | Defines how far up the branch the weld spread starts.
+TreeEditor.TreeGroupBranch.WeldSpreadTop:			Spread Top | Weld's spread factor on the top-side of the branch, relative to it's parent branch. Zero means no spread.
+TreeEditor.TreeGroupBranch.WeldSpreadBottom:		Spread Bottom | Weld's spread factor on the bottom-side of the branch, relative to it's parent branch. Zero means no spread.
+
+//
+// Breaking
+//
+TreeEditor.TreeGroupBranch.Breaking:				Breaking |
+TreeEditor.TreeGroupBranch.BreakChance:				Break Chance | Chance of a branch breaking, i.e. 0 = no branches are broken, 0.5 = half of the branches are broken, 1.0 = all the branches are broken.
+TreeEditor.TreeGroupBranch.BreakLocation:			Break Location | This range defines where the branches will be broken. Relative to the length of the branch.
+
+//
+// Fronds
+//
+TreeEditor.TreeGroupBranch.Fronds:					Fronds |
+TreeEditor.TreeGroupBranch.FrondCount:				Frond Count | Defines the number of fronds per branch. Fronds are always evenly spaced around the branch.
+TreeEditor.TreeGroupBranch.FrondWidth:				Frond Width | The width of the fronds, use the curve to adjust the specific shape along the length of the branch.
+TreeEditor.TreeGroupBranch.FrondRange:				Frond Range | Defines the starting and ending point of the fronds.
+TreeEditor.TreeGroupBranch.FrondRotation:			Frond Rotation | Defines rotation around the parent branch.
+TreeEditor.TreeGroupBranch.FrondCrease:				Frond Crease | Adjust to crease / fold the fronds.
+
+TreeEditor.TreeGroupBranch.NoFronds:				The selected Geometry mode does not support fronds. It can be changed in the Geometry tab. |
+
+//
+// Animation
+//
+TreeEditor.TreeGroupBranch.Animation:				Wind | Adjusts the parameters used for animating this group of branches. The wind zones are only active in Play Mode.
+TreeEditor.TreeGroupBranch.MainWind:				Main Wind | Primary wind effect. This creates a soft swaying motion and is typically the only parameter needed for primary branches.
+TreeEditor.TreeGroupBranch.MainTurbulence:			Main Turbulence | Secondary turbulence effect. Produces more stochastic motion, which is individual per branch. Typically used for branches with fronds, such as ferns and palms.
+TreeEditor.TreeGroupBranch.EdgeTurbulence:			Edge Turbulence | Turbulence along the edge of fronds. Useful for ferns, palms, etc.
+
+
+//
+// Leaf Group
+//
+TreeEditor.TreeGroupLeaf.Foldout:					Leaf Group Properties |
+
+TreeEditor.TreeGroupLeaf.Distribution:				Distribution | Adjusts the count and placement of leaves in the group. Use the curves to fine tune position, rotation and scale. The curves are relative to the parent branch.
+TreeEditor.TreeGroupLeaf.GroupSeed:					Group Seed | The seed for this group of leaves. Modify to vary procedural generation.
+TreeEditor.TreeGroupLeaf.Frequency:					Frequency | Adjusts the number of leaves created for each parent branch.
+TreeEditor.TreeGroupLeaf.DistributionMode:			Distribution | Select the way the leaves are distributed along their parent.
+TreeEditor.TreeGroupLeaf.Twirl:						Twirl | Twirl around the parent branch.
+TreeEditor.TreeGroupLeaf.WhorledStep:				Whorled Step | Defines how many nodes are in each whorled step when using Whorled distribution. For real plants this is normally a Fibonacci number.
+TreeEditor.TreeGroupLeaf.GrowthScale:				Growth Scale | Defines the scale of nodes along the parent node. Use the curve to adjust and the slider to fade the effect in and out.
+TreeEditor.TreeGroupLeaf.GrowthAngle:				Growth Angle | Defines the initial angle of growth relative to the parent. Use the curve to adjust and the slider to fade the effect in and out.
+
+TreeEditor.TreeGroupLeaf.Geometry:					Geometry | Select what type of geometry is generated for this leaf group and which materials are applied. If you use a custom mesh, its materials will be used.
+TreeEditor.TreeGroupLeaf.GeometryMode:				Geometry Mode | The type of geometry created. You can use a custom mesh, by selecting the Mesh option, ideal for flowers, fruits, etc.
+TreeEditor.TreeGroupLeaf.Material:					Material | Material used for the leaves.
+TreeEditor.TreeGroupLeaf.Mesh:						Mesh | Mesh used for the leaves.
+
+TreeEditor.TreeGroupLeaf.Shape:						Shape | Adjusts the shape and growth of the leaves.
+TreeEditor.TreeGroupLeaf.Size:						Size | Adjusts the size of the leaves, use the range to adjust the minimum and the maximum size.
+TreeEditor.TreeGroupLeaf.PerpendicularAlign:		Perpendicular Align | Adjusts whether the leaves are aligned perpendicular to the parent branch.
+TreeEditor.TreeGroupLeaf.HorizontalAlign:			Horizontal Align | Adjusts whether the leaves are aligned horizontally.
+
+TreeEditor.TreeGroupLeaf.Animation:					风 | Adjusts the parameters used for animating this group of leaves. Wind zones are only active in Play Mode. If you select too high values for Main Wind and Main Turbulence the leaves may float away from the branches.
+TreeEditor.TreeGroupLeaf.MainWind:					主风 | Primary wind effect. Usually this should be kept as a low value to avoid leaves floating away from the parent branch.
+TreeEditor.TreeGroupLeaf.MainTurbulence:			Main Turbulence | Secondary turbulence effect. For leaves this should usually be kept as a low value.
+TreeEditor.TreeGroupLeaf.EdgeTurbulence:			Edge Turbulence | Defines how much wind turbulence occurs along the edges of the leaves.
+
+TreeEditor.TreeGroupLeaf.GeometryModeOption.Plane:		Plane |
+TreeEditor.TreeGroupLeaf.GeometryModeOption.Cross:		Cross |
+TreeEditor.TreeGroupLeaf.GeometryModeOption.TriCross:	TriCross |
+TreeEditor.TreeGroupLeaf.GeometryModeOption.Billboard:	Billboard |
+TreeEditor.TreeGroupLeaf.GeometryModeOption.Mesh:		Mesh |
+
+// Shared options
+
+TreeEditor.DistributionModeOption.Random:			Random |
+TreeEditor.DistributionModeOption.Alternate:		Alternate |
+TreeEditor.DistributionModeOption.Opposite:			Opposite |
+TreeEditor.DistributionModeOption.Whorled:			Whorled |
