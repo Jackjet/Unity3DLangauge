@@ -4,7 +4,7 @@
 //联系方式:SmartBooks@qq.com
 //
 
-// Generic Tooltip file for Unity 2.5
+// Unity 2.5通用提示文件
 // All controls have a name, and are followed by one or two text strings
 // format is:
 //	ControlName: 		Text On Control	| Tooltip to display when we actually display tooltips :-)
@@ -71,11 +71,11 @@ MoveTool:						| 移动选定的对象.
 RotateTool:						| 旋转选定的对象.
 ScaleTool:						| 缩放选定的对象.
 ToolHandleCenter:	中心		| 被放置在该工具手柄的中心的选择.
-ToolHandlePivot:		Pivot 		| The tool handle is placed at the active object's pivot point.
-ToolHandleGlobal:	世界		| Tool handles are in global rotation.
-ToolHandleLocal:	本地 		| Tool handles are in active object's rotation.
+ToolHandlePivot:		Pivot 		| 该工具处理放置在活跃的对象的支点.
+ToolHandleGlobal:	世界		| 工具手柄相对于世界旋转.
+ToolHandleLocal:	本地 		| 工具手柄相对于对象旋转.
 ToolbarLayers:		层	| Which layers are visible in the Scene views.
-ToolbarLayout:		布局	| Select the application's window layout.
+ToolbarLayout:		布局	| 选择应用程序的窗口布局.
 
 
 // 窗格菜单
@@ -91,11 +91,11 @@ ColorPicker.ColorCycle: 		  	循环 	| 循环列表中可用的颜色空间.
 ColorPicker.SliderFoldout: 			滑块 | RGB或HSV颜色滑块.
 ColorPicker.SliderCycle: 			循环 	| 循环可用滑块类型列表.
 
-// 探查器窗口
+// 属性窗口
 // -------------------------------------------------------------------
-Profiler.AddArea:                   Add Profiler    | Add a profiler area
-Profiler.CurrentProfiler:           Active Profiler | Select connected player to profile
-Profiler.Record:                    Record          | Record profiling information
+Profiler.AddArea:                   添加探查器    | 添加一个探查器区域
+Profiler.CurrentProfiler:           活动探查器 | Select connected player to profile
+Profiler.Record:                    记录          | Record profiling information
 Profiler.PrevFrame:                                 | Go back one frame
 Profiler.NextFrame:                                 | Go one frame forwards
 Profiler.CurrentFrame:              当前         | Go to current frame
@@ -109,35 +109,35 @@ Profiler.CPU.Rendering:             渲染时间       | 渲染消耗的时间
 Profiler.Rendering:                 渲染
 Profiler.Physics:                   物理
 Profiler.CPU.Other:                 其他           | Other stuff
-Profiler.NoLicense:                 Profiler requires Unity Pro
+Profiler.NoLicense:                 探查器需要Unity专业版
 Profiler.Audio:                     音频
 Profiler.NoFrameDataAvailable:      没有可用的帧数据
 
-Profiler.FrameOverview:             Frame Overview
-Profiler.DeepProfile:               Deep Profile     | Instrument all mono calls to investigate scripts
-Profiler.SyncTimeProfiling:         Profile SyncTime | View time spent in synchronizing FPS
-Profiler.ProfileEditor:             Profile Editor   | Enable profiling of the editor
+Profiler.FrameOverview:             框架概述
+Profiler.DeepProfile:               高级属性     | Instrument all mono calls to investigate scripts
+Profiler.SyncTimeProfiling:         属性同步时间 | View time spent in synchronizing FPS
+Profiler.ProfileEditor:             属性编辑   | Enable profiling of the editor
 
-ProfilerColumn.FunctionName:        Overview
-ProfilerColumn.TotalPercent:        Total
-ProfilerColumn.SelfPercent:         Self
-ProfilerColumn.Calls:               Calls
-ProfilerColumn.GCMemory:            GC Alloc
-ProfilerColumn.TotalTime:           Time ms
-ProfilerColumn.SelfTime:            Self ms
-ProfilerColumn.DrawCalls:           DrawCalls
-ProfilerColumn.TotalGPUTime:        GPU ms
-ProfilerColumn.SelfGPUTime:         Self ms
-ProfilerColumn.TotalGPUPercent:        Total
-ProfilerColumn.SelfGPUPercent:         Self
-ProfilerColumn.ObjectName:          Name
-ProfilerColumn.DetailViewObject:    Object
+ProfilerColumn.FunctionName:        概览
+ProfilerColumn.TotalPercent:        统计
+ProfilerColumn.SelfPercent:         自身
+ProfilerColumn.Calls:               调用
+ProfilerColumn.GCMemory:            GC分配
+ProfilerColumn.TotalTime:           时间毫秒
+ProfilerColumn.SelfTime:            自身毫秒
+ProfilerColumn.DrawCalls:           绘制调用
+ProfilerColumn.TotalGPUTime:        GPU毫秒
+ProfilerColumn.SelfGPUTime:         自身毫秒
+ProfilerColumn.TotalGPUPercent:        统计
+ProfilerColumn.SelfGPUPercent:         自身
+ProfilerColumn.ObjectName:          名称
+ProfilerColumn.DetailViewObject:    对象
 
 
 
-// Snap Setting Popup
+// 提前设置弹出
 // -------------------------------------------------------------------
-Snap.SnapAllAxes:		Snap All Axes | Snaps selected objects to the grid
+Snap.SnapAllAxes:		所有轴对齐 | Snaps selected objects to the grid
 Snap.SnapX:				X | Snaps selected objects to the grid on the x axis
 Snap.SnapY:				Y | Snaps selected objects to the grid on the z axis
 Snap.SnapZ:				Z | Snaps selected objects to the grid on the y axis
@@ -150,27 +150,27 @@ Snap.Rotation:			旋转 |  Grid spacing for rotation in degrees
 // 欢迎屏幕
 // -------------------------------------------------------------------
 // "Welcome to Unity" is an image
-WelcomeScreen.MainText: As you dive into Unity, may we suggest a few hints to get you off to a good start?
+WelcomeScreen.MainText:当你进入unity,我们建议将一些提示让你有了一个好的开始吗?
 WelcomeScreen.ShowAtStartup: 启动时显示
 
 // WelcomeScreen.VideoTutLogo is an image
-WelcomeScreen.VideoTutHeader: 		Video Tutorials
+WelcomeScreen.VideoTutHeader: 		视频教程
 WelcomeScreen.VideoTutText: 			We have collected some videos to make you productive immediately.
 
 // WelcomeScreen.UnityBasicsLogo is an image
-WelcomeScreen.UnityBasicsHeader: Unity Basics
+WelcomeScreen.UnityBasicsHeader: Unity基础
 WelcomeScreen.UnityBasicsText: Take a look at our manual for a quick startup guide.
 
 // WelcomeScreen.UnityAnswersLogo is an image
-WelcomeScreen.UnityAnswersHeader: Unity Answers
+WelcomeScreen.UnityAnswersHeader: Unity问答
 WelcomeScreen.UnityAnswersText: Have a question about how to use Unity? Check our answers site for precise how-to knowledge.
 
 // WelcomeScreen.UnityForumLogo is an image
-WelcomeScreen.UnityForumHeader: Unity Forum
+WelcomeScreen.UnityForumHeader: Unity论坛
 WelcomeScreen.UnityForumText: Meet the other Unity users here - the friendliest people in the industry.
 
 // WelcomeScreen.AssetStoreLogo is an image
-WelcomeScreen.AssetStoreHeader: Unity Asset Store
+WelcomeScreen.AssetStoreHeader: Unity资源商店
 WelcomeScreen.AssetStoreText: The Asset Store is the place to find art assets, game code and extensions directly inside the Unity editor. It's like having a complete supermarket under your desk.
 
 
@@ -178,7 +178,7 @@ WelcomeScreen.AssetStoreText: The Asset Store is the place to find art assets, g
 // -------------------------------------------------------------------
 EditorUpdateWindow.Title: Unity 编辑器检查更新
 EditorUpdateWindow.TextHasUpdate: There is a new version of the Unity Editor available for download.\n\nCurrently installed version is {0}\nNew version is {1}
-EditorUpdateWindow.TextUpToDate: The Unity Editor is up to date. Currently installed version is {0}
+EditorUpdateWindow.TextUpToDate: 这个Unity编辑器是最新的. 当前安装的版本是 {0}
 EditorUpdateWindow.CheckForNewUpdatesText: 检查更新
 
 
@@ -196,17 +196,17 @@ ModelImporter.GenerateColliders:	生成碰撞	| Should Unity generate mesh colli
 ModelImporter.SwapUVChannels:	交换 UVs		| Swaps the 2 UV channels in meshes. Use if your diffuse texture uses UVs from the lightmap.
 
 ModelImporterGenerateSecondaryUV:	        生成光照贴图 UVs		| Generate lightmap UVs into UV2.
-ModelImporterGenerateSecondaryUVAdvanced:   Advanced
-ModelImporterSecondaryUVAngleDistortion:    Angle Error | Measured in percents. Angle error measures deviation of UV angles from geometry angles. Area error measures deviation of UV triangles area from geometry triangles if they were uniformly scaled.
-ModelImporterSecondaryUVAreaDistortion:     Area Error
-ModelImporterSecondaryUVHardAngle:          Hard Angle | Angle between neighbor triangles that will generate seam.
+ModelImporterGenerateSecondaryUVAdvanced:   高级设置
+ModelImporterSecondaryUVAngleDistortion:    角度误差 | Measured in percents. Angle error measures deviation of UV angles from geometry angles. Area error measures deviation of UV triangles area from geometry triangles if they were uniformly scaled.
+ModelImporterSecondaryUVAreaDistortion:     面积误差
+ModelImporterSecondaryUVHardAngle:          硬角 | Angle between neighbor triangles that will generate seam.
 ModelImporterSecondaryUVPackMargin:         Pack Margin | Measured in pixels, assuming mesh will cover an entire 1024x1024 lightmap.
 ModelImporterSecondaryUVDefaults:           设置默认值
 
 ModelImporterMaterials:			材质		
 ModelImporterMatImportMaterials:				导入材质
 ModelImporterMatMaterialName:					材质命名
-ModelImporterMatMaterialNameTex:				By Base Texture Name
+ModelImporterMatMaterialNameTex:				在基础纹理名称
 ModelImporterMatMaterialNameMat:				From Model's Material
 ModelImporterMatMaterialNameModelMat:			Model Name + Model's Material
 ModelImporterMatMaterialNameTex_ModelMat:		Texture Name or Model Name + Model's Material (Obsolete)
@@ -382,7 +382,7 @@ TextureImporter.TextureType.GUI:		GUI					| Texture is used for a GUI element.
 TextureImporter.TextureType.Reflection:	倒影			| Texture is a reflection cubemap.
 TextureImporter.TextureType.Cookie:		Cookie				| Texture is a cookie you put on a light.
 TextureImporter.TextureType.Lightmap:	光线照射			| Texture is a lightmap.
-TextureImporter.TextureType.Advanced:	Advanced			| All settings displayed.
+TextureImporter.TextureType.Advanced:	高级设置			| All settings displayed.
 TextureImporter.Alpha:					Alpha通道是
 TextureImporter.Alpha.Specular:			高光
 TextureImporter.Alpha.Transparent:		透明度
@@ -413,24 +413,24 @@ TextureImporter.Platforms.Default:			默认值
 TextureImporter.MaxSize:				最大尺寸 		| Textures larger than this will be scaled down.
 TextureImporter.TextureFormat:				格式
 TextureImporter.CompressionQuality:			品质
-TextureImporter.TextureFormat.Compressed:	Compressed
+TextureImporter.TextureFormat.Compressed:	压缩格式
 TextureImporter.TextureFormat.16 bit:		16 位
 TextureImporter.TextureFormat.Truecolor:	真彩色
 TextureImporter.TextureFormat.2bit:			2 位
 TextureImporter.TextureFormat.4bit:			4 位
 
 TextureImporter.Npot:						Non Power of 2		| How non-power-of-two textures are scaled on import.
-TextureImporter.ReadWrite:					Read/Write Enabled | Enable to be able to access the raw pixel data from code.
+TextureImporter.ReadWrite:					启用读写 | Enable to be able to access the raw pixel data from code.
 TextureImporter.GenerateAlphaFromGrayscale:	Alpha from Grayscale | Generate texture's alpha channel from grayscale.
 TextureImporter.LinearTexture:				Bypass sRGB Sampling	| Texture will not be converted from gamma space to linear when sampled. Enable for GUI textures, look up textures and similar.
 TextureImporter.GenerateMipMaps:			Generate Mip Maps
 TextureImporter.BorderMipMaps:				Border Mip Maps
-TextureImporter.NormalMap:					Normal Map			| Enable if this texture is a normal map baked out of a 3D package.
-TextureImporter.Lightmap:					Lightmap			| Enable if this is a lightmap (best if stored in EXR format).
-TextureImporter.MipMapFilter:				Mip Map Filtering
+TextureImporter.NormalMap:					法线贴图			| Enable if this texture is a normal map baked out of a 3D package.
+TextureImporter.Lightmap:					光线照射			| Enable if this is a lightmap (best if stored in EXR format).
+TextureImporter.MipMapFilter:				最大密度投影(MIP)地图过滤
 TextureImporter.MipMapFilterOptions.Box:	盒子
 TextureImporter.MipMapFilterOptions.Kaiser:	Kaiser
-TextureImporter.CompressionQuality:                 Compression Quality
+TextureImporter.CompressionQuality:                 压缩品质
 TextureImporter.CompressionQualityOptions.Fast:     快速
 TextureImporter.CompressionQualityOptions.Normal:   正常
 TextureImporter.CompressionQualityOptions.Best:     最好
@@ -441,7 +441,7 @@ PlayerSettings.CrossPlatformHeader:	跨平台设置
 PlayerSettings.PerPlatformHeader:	Per-Platform Settings
 PlayerSettings.DefaultIcon:	默认图标
 PlayerSettings.NotApplicableForPlatform:	不适用此平台.
-PlayerSettings.IconsNaClOnly:	Icons are only used for NaCl builds used as Chrome Apps.
+PlayerSettings.IconsNaClOnly:	图标只是最为构建Chrome App应用使用.
 PlayerSettings.SharedSettingsFootnote:	* 设置多个平台之间共享.
 
 PlayerSettings.ResolutionHeader:	分辨率和显示
@@ -465,18 +465,18 @@ PlayerSettings.SubmissionSubHeader:		提交
 PlayerSettings.NoTemplatesFound:	没有找到模板.
 PlayerSettings.UIPrerenderedIcon:	Prerendered Icon
 PlayerSettings.ResolutionDialogBanner:	配置对话框横幅
-PlayerSettings.IPhoneSplashScreen:	Mobile Splash Screen*
+PlayerSettings.IPhoneSplashScreen:	移动设备启动画面*
 PlayerSettings.IPhoneHighResSplashScreen:	High Res. iPhone
-PlayerSettings.IPadPortraitSplashScreen:	iPad Portrait
+PlayerSettings.IPadPortraitSplashScreen:	iPad 肖像
 PlayerSettings.IPadLandscapeSplashScreen:	iPad Landscape
-PlayerSettings.DefaultScreenWidth:	Default Screen Width
-PlayerSettings.DefaultScreenHeight:	Default Screen Height
+PlayerSettings.DefaultScreenWidth:	默认屏幕宽度
+PlayerSettings.DefaultScreenHeight:	默认屏幕高度
 PlayerSettings.DefaultScreenWidthWeb:	默认屏幕宽度*
 PlayerSettings.DefaultScreenHeightWeb:	默认屏幕高度*
-PlayerSettings.RunInBackground:	Run In Background*
+PlayerSettings.RunInBackground:	在后台运行*
 
-PlayerSettings.DefaultScreenOrientation:	Default Orientation*
-PlayerSettings.AutoRotationAllowedOrientation:	Allowed Orientations for Auto Rotation
+PlayerSettings.DefaultScreenOrientation:	缺省方向*
+PlayerSettings.AutoRotationAllowedOrientation:	允许自动旋转适应
 PlayerSettings.PortraitOrientation:		Portrait
 PlayerSettings.PortraitUpsideDownOrientation:	Portrait Upside Down
 PlayerSettings.LandscapeRightOrientation:	Landscape Right
@@ -597,18 +597,18 @@ PlayerSettings.wiiWBCWarning: (Controller Count should be 4)
 
 PlayerSettings.flashStrippingLevel:	Stripping Level
 
-// ANDROID KEYSTORE
-AndroidKeystore.CreateNewKey:	Create a new key
-AndroidKeystore.KeyCreation:	Key Creation
-AndroidKeystore.Alias:	Alias
+// ANDROID密钥存储库
+AndroidKeystore.CreateNewKey:	创建一个新的密钥
+AndroidKeystore.KeyCreation:	创建密钥
+AndroidKeystore.Alias:	别名
 AndroidKeystore.Password:	密码
 AndroidKeystore.PassConfirm: 确认
 AndroidKeystore.Validity:	有效性 (年)
 AndroidKeystore.Name:	你的姓名
 AndroidKeystore.OrgUnit:	组织单位
 AndroidKeystore.Organization:	组织机构
-AndroidKeystore.City:	City or Locality
-AndroidKeystore.State:	State or Province
+AndroidKeystore.City:	所在位置(城市)
+AndroidKeystore.State:	省或州自治区
 AndroidKeystore.Country: 国家代码(XX)
 AndroidKeystore.EnterKeyalias:	Enter alias for your new key.
 AndroidKeystore.KeyliasExists:	The alias entered already exists in keystore.
@@ -618,12 +618,12 @@ AndroidKeystore.PasswordsDontMatch: Passwords don't match.
 AndroidKeystore.EnterValidityTime:	Enter key validity time.
 AndroidKeystore.MaxValidityTime:	Maximum validity time is 1000 years.
 AndroidKeystore.NoCertData:	At least one Certificate issuer field is required.
-AndroidKeystore.RecommendedValidityTime:	A 25 years validity time is recommended.
+AndroidKeystore.RecommendedValidityTime:	一个25年的时间是推荐的有效性.
 AndroidKeystore.CreateKey:	Create Key
 
 
 // BUILD SETTINGS
-BuildSettings.ScenesInBuild:	Scenes In Build		| Which scenes to include in the build
+BuildSettings.ScenesInBuild:	编译场景		| Which scenes to include in the build
 BuildSettings.AddScene:			添加					| Add a scene to the build
 BuildSettings.AddCurrent:		添加当前			| Add a scene to the build
 BuildSettings.PlatformTitle:	平台			| Which platform to build for
@@ -637,7 +637,7 @@ BuildSettings.XBox360:			Xbox 360
 BuildSettings.StandaloneGLESEmu:			GLES Emulator
 BuildSettings.StandaloneGLES20Emu:		GLES 2.0 Emulator
 BuildSettings.Android:			Android
-BuildSettings.FlashPlayer:		Flash Player (Preview)
+BuildSettings.FlashPlayer:		Flash播放器 (预览)
 
 BuildSettings.NoWeb:				Unity Web Player building is disabled during the public preview beta. It will be enabled when Unity ships.
 BuildSettings.NoWebButton:
@@ -660,7 +660,7 @@ BuildSettings.NoiPhoneURL:			https://store.unity3d.com/shop/#iPhone
 BuildSettings.NoWiiURL:				https://store.unity3d.com/shop/#Wii
 BuildSettings.NoPS3URL:				https://store.unity3d.com/shop/#standalone
 BuildSettings.NoXBox360URL:			Xbox 360
-BuildSettings.NoAndroidURL:			Android
+BuildSettings.NoAndroidURL:			安卓
 
 BuildSettings.WebNotInstalled:			Web Player is not supported in this build.\nDownload a build that supports it.
 BuildSettings.StandaloneNotInstalled:	Standalone Player is not supported in this build.\nDownload a build that supports it.
@@ -721,10 +721,10 @@ BuildSettings.XboxBuildSubtargetDevelopment:	Development player
 BuildSettings.XboxBuildSubtargetMaster:			Master player
 BuildSettings.XboxBuildSubtargetDebug:			Debug player
 
-BuildSettings.XboxRunMethod:                Run method
-BuildSettings.XboxRunMethodHDD:             Copy to HDD
-BuildSettings.XboxRunMethodDiscEmuFast:     DVD emulation (No timing)
-BuildSettings.XboxRunMethodDiscEmuAccurate: DVD emulation (Accurate)
+BuildSettings.XboxRunMethod:                运行方法
+BuildSettings.XboxRunMethodHDD:             复制到HDD
+BuildSettings.XboxRunMethodDiscEmuFast:     DVD 仿真 (No timing)
+BuildSettings.XboxRunMethodDiscEmuAccurate: DVD 仿真 (准确的)
 
 BuildSettings.AndroidBuildSubtarget:	纹理压缩
 BuildSettings.AndroidBuildSubtargetGeneric:	不要覆盖
@@ -755,7 +755,7 @@ BuildUploadCompletedWindow.CancelButton:					取消
 BuildUploadCompletedWindow.FixButton:						修复这个问题
 BuildUploadCompletedWindow.CloseButton:						关闭
 
-BuildUploadCompletedWindow.ShareMessage:					Check out my new webplayer!
+BuildUploadCompletedWindow.ShareMessage:					检验我的网络播放器新版本!
 
 
 // UploadingBuildsMonitor
@@ -800,8 +800,8 @@ LightmapEditor.DisplayControls.ShowProbes: 显示探测点
 LightmapEditor.DisplayControls.ShowCells: 显示单元格
 LightmapEditor.EmptySelection: Select a Light, Mesh Renderer or a Terrain from the scene.
 LightmapEditor.ScaleInLightmap: Scale In Lightmap | Object's surface multiplied by this value determines it's size in the lightmap. 0 - don't lightmap this object.
-LightmapEditor.Static: Static | Only static Mesh Renderers and static Terrains will be lightmapped.
-LightmapEditor.Light.IndirectIntensity: Bounce Intensity | Indirect light intensity multiplier.
+LightmapEditor.Static: 静态 | Only static Mesh Renderers and static Terrains will be lightmapped.
+LightmapEditor.Light.IndirectIntensity: 反弹强度 | Indirect light intensity multiplier.
 LightmapEditor.Light.Shadows: 烘焙阴影
 LightmapEditor.Light.ShadowSamples: Shadow Samples | Number of samples for direct shadows.
 LightmapEditor.Light.ShadowRadius: Shadow Radius | The size of the light taken into account when calculating direct shadows.
@@ -813,7 +813,7 @@ LightmapEditor.AOContrast: 对比度 | Controls the transition between fully occ
 LightmapEditor.Maps: Maps | The editable list of lightmaps.
 LightmapEditor.Probes: Probes | Shows and allows to edit a cloud of light probes.
 LightmapEditor.MapsArraySize: 集合大小 | The length of the array of lightmaps.
-LightmapEditor.Mode: Mode | Single or dual lightmaps mode.
+LightmapEditor.Mode: 模式 | Single or dual lightmaps mode.
 LightmapEditor.LockAtlas: Lock Atlas | If Lock Atlas is enabled, automatic atlasing won't be performed and lightmap index, tiling and offset on objects won't be modified.
 LightmapEditor.Atlas: Atlas
 LightmapEditor.AtlasIndex: Lightmap Index
@@ -838,8 +838,8 @@ NavMeshEditorWindow.ShowHeightMesh: Show HeightMesh
 // --------------------
 OcclusionCullingWindow.WindowTitle: Occlusion | 
 OcclusionCullingWindow.NearClipPlane: Near Clip Plane | Near Clip Plane used during baking. This should match the smallest near clip plane used by any camera in the scene.
-OcclusionCullingWindow.FarClipPlane: Far Clip Plane | Far Clip Plane used during baking. This should match the largest far clip plane used by any camera in the scene. 
-OcclusionCullingWindow.ViewCellSize: View Cell Size | Size of each View area cell. A smaller value produces more accurate occlusion culling. This value is a tradeoff between occlusion accuracy and storage size.
+OcclusionCullingWindow.FarClipPlane: 远夹面 | Far Clip Plane used during baking. This should match the largest far clip plane used by any camera in the scene. 
+OcclusionCullingWindow.ViewCellSize: 视图单元大小 | Size of each View area cell. A smaller value produces more accurate occlusion culling. This value is a tradeoff between occlusion accuracy and storage size.
 OcclusionCullingWindow.BakeQuality: 烘焙品质 | Preview mode can be used to get quick results, objects might be culled too early. Use Production mode when making a build.
 OcclusionCullingWindow.PVSMemoryLimit: 内存限额 | Hint to limit PVS memory usage
 OcclusionCullingWindow.OcclusionCullingMode: Technique | 
@@ -853,7 +853,7 @@ StaticOcclusionCullingMode.ManuallyPlacedPortalsOnly: Manually Placed Portals On
 // Script Execution Order Inspector
 // -------------------------------------------------------------------
 ScriptExecutionOrderInspector.HelpText:	Add scripts to the custom order and drag them to reorder.\n\nScripts in the custom order can execute before or after the default time and are executed from top to bottom. All other scripts execute at the default time in the order they are loaded.\n\n(Changing the order of a script may modify the meta data for more than one script.)
-ScriptExecutionOrderInspector.DefaultTime:	Default Time | All scripts not in the custom order are executed at the default time.
+ScriptExecutionOrderInspector.DefaultTime:	默认时间 | All scripts not in the custom order are executed at the default time.
 
 // 导航网格
 // --------------------
